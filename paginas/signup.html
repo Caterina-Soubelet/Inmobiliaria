@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+    <title>Inscribirse</title>
     <link rel="stylesheet" href="../recursos/estilos.css" />
     <link rel="stylesheet" href="../paginas/login.css" />
     <link rel="stylesheet" href="../index.html" />
@@ -25,8 +25,15 @@
     <main>
       <div class="form-content">
         <div class="box">
-          <h3>¡Bienvenido!</h3>
+          <h3>Crear una cuenta</h3>
           <form action="">
+            <div class="input-box">
+              <input
+                type="text"
+                placeholder="Nombre Completo"
+                class="input-control"
+              />
+            </div>
             <div class="input-box">
               <input type="email" placeholder="Email" class="input-control" />
             </div>
@@ -37,19 +44,14 @@
                 placeholder="Contraseña"
                 class="input-control"
               />
-              <div class="input-link">
-                <a href="password.html" class="gradient-text"
-                  >¿Has olvidado tu contraseña?</a
-                >
-              </div>
             </div>
 
-            <button type="submit" class="form-btn">Iniciar Sesión</button>
+            <button type="submit" class="form-btn">Crear cuenta</button>
           </form>
 
           <p>
-            ¿No tienes una cuenta?
-            <a class="gradient-text" href="signup.html">Registrarse</a>
+            ¿Ya tienes una cuenta?
+            <a class="gradient-text" href="login.html">Iniciar Sesión</a>
           </p>
         </div>
       </div>
