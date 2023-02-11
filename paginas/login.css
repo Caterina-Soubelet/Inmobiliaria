@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+
+body {
+  background: black;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-superior {
+  justify-content: center;
+}
+
+.main {
+  z-index: 1;
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+  display: inline-block;
+  color: rgb(188, 242, 13);
+}
+
+.form-content {
+  min-height: 100%;
+  padding: 40px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+.form-content .box {
+  margin: 200px auto;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.form-content h3 {
+  font-size: 50px;
+  text-align: center;
+  line-height: 1.2;
+  color: aliceblue;
+  font-weight: 600;
+}
+
+.form-content form {
+  margin: 25px 0 20px;
+  color: rgb(255, 255, 255);
+}
+
+.form-content .input-box {
+  margin-bottom: 25px;
+}
+
+.form-content .input-control {
+  display: block;
+
+  height: 60px;
+  width: 100%;
+  background-color: rgb(15, 12, 12, 0.1);
+  border: none;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  color: inherit;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+}
+
+input::placeholder {
+  color: rgb(222, 252, 232);
+  font-size: 18px;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(222, 252, 232);
+  font-size: 18px;
+}
+
+input::-ms-input-placeholder {
+  color: rgb(222, 252, 232);
+  font-size: 18px;
+}
+
+.form-content .input-control:focus {
+  outline: none;
+}
+
+.form-content .input-link {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.form-content .form-btn {
+  height: 45px;
+  width: 100%;
+  font-size: 19px;
+  font-weight: 550;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  border-radius: 25px;
+  user-select: none;
+  border: none;
+  color: whitesmoke;
+  background: rgba(138, 233, 226, 1);
+  background: -webkit-linear-gradient(
+    left,
+    rgba(138, 233, 226, 1),
+    rgba(32, 118, 145, 1)
+  );
+  background: -moz-linear-gradient(
+    left,
+    rgba(138, 233, 226, 1),
+    rgba(32, 118, 145, 1)
+  );
+  background: linear-gradient(
+    to right,
+    rgba(138, 233, 226, 1),
+    rgba(32, 118, 145, 1)
+  );
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.form-content .form-btn:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: background-color 0.5s ease;
+  z-index: -1;
+}
+
+.form-content .form-btn:hover::before {
+  background-color: rgba(56, 56, 56, 0.2);
+}
+
+.form-content p {
+  text-align: center;
+  color: azure;
+  font-size: 17px;
+}

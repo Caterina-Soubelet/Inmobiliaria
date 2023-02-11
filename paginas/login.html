@@ -7,6 +7,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="../recursos/estilos.css" />
     <link rel="stylesheet" href="../paginas/login.css" />
+    <link rel="stylesheet" href="../index.html" />
   </head>
 
   <body>
@@ -19,21 +20,39 @@
               alt="Logo de la Inmobiliaria"
           /></a>
         </div>
-
-        <div class="search">
-          <input type="search" placeholder="¿Qué propiedad deseas buscar?" />
-        </div>
       </div>
     </header>
+    <main>
+      <div class="form-content">
+        <div class="box">
+          <h3>¡Bienvenido!</h3>
+          <form action="">
+            <div class="input-box">
+              <input type="email" placeholder="Email" class="input-control" />
+            </div>
 
-    <main class="main">
-      <form class="form">
-        <h1>INICIA SESIÓN</h1>
-        <input type="email" placeholder="Email" class="" />
-        <input type="password" placeholder="Contraseña" class="" />
-        <a href="#">Todavia no tienes cuenta? Registrarse</a>
-        <a href="../index.html">Ingresar</a>
-      </form>
+            <div class="input-box">
+              <input
+                type="password"
+                placeholder="Contraseña"
+                class="input-control"
+              />
+              <div class="input-link">
+                <a href="#" class="gradient-text"
+                  >¿Has olvidado tu contraseña?</a
+                >
+              </div>
+            </div>
+
+            <button type="submit" class="form-btn">Iniciar Sesión</button>
+          </form>
+
+          <p>
+            ¿No tienes una cuenta?
+            <a class="gradient-text" href="signup.html">Registrarse</a>
+          </p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
