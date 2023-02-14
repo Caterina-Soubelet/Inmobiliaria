@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,500&display=swap");
+
+body {
+  padding-top: 150px;
+  height: 100%;
+  
+}
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+section .contact-form {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax (500px 1fr));
+  padding: 40px;
+  width: 90%;
+  background: #9cdafa;
+  box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: center;
+  width: 85%;
+  margin-left: 30px;
+  
+}
+
+.form form {
+  width: 100%;
+}
+
+.form .text h2 {
+  font-family: font-family: "Poppins", sans-serif;
+  font-size:32px;
+  margin-bottom:10px;
+  align-items:center;
+  justify-content:center;
+    
+}
+
+.form .text p {
+    font-family: font-family: "Poppins", sans-serif;
+    line-height:1.5;
+    margin-bottom:20px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    color: #1766a3;
+    font-weight: 700;
+
+}
+
+.input-box input[type="text"],
+.input-box input[type="email"],
+.input-box textarea {
+    border: none;
+    background: #cbebfb;
+    padding: 10px;
+    border-radius: 10px;
+    color: #1766a3;
+    resize: none;
+    
+}
+
+.input-box input[type="text"],
+.input-box input[type="email"],
+.input-box textarea:focus {
+  
+  outline: 2px solid #267484;
+}
+
+.form input[type="submit"] {
+    background: #1766a3;
+    display: inline-block;
+    text-align: center;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(250, 250, 250);
+    letter-spacing: 1px;
+    border: none;
+    box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form input[type="submit"]:hover {
+    background: #0b426c;
+   
+}
+
+input::placeholder {
+  color: rgb(16, 17, 16,0.5);
+  font-size: 15px;
+}
+
+input::-webkit-input-placeholder {
+  color: rgb(16, 17, 16,0.5);
+  font-size: 15px;
+}
+
+input::-ms-input-placeholder {
+  color: rgb(16, 17, 16,0.5);
+  font-size: 15px;
+}
+/* 1210 */
+
+.contact {
+  background: rgb(137, 231, 173);
+}
+
+nav > ul > li > a.active {
+  background:none;
+}
+
+nav > ul > li > a.active:hover {
+  transform: scale(1.1);
+  background: rgb(137, 231, 173);
+  box-shadow: 0px 0px 10px 0px rgba (0, 0, 0, 0.5);
+}
+
+
+
+
+/* mediaquares */
+
+@media screen and (max-width:720px) {
+
+  .form .text h2 {
+    justify-content: center;
+    display: flex;
+
+  }
+  
+}

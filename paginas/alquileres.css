@@ -1,0 +1,18 @@
+body {
+  padding-top: 150px;
+  height: 100%;
+}
+
+.alquileres {
+  background: rgb(137, 231, 173);
+}
+
+nav > ul > li > a.active {
+  background: none;
+}
+
+nav > ul > li > a.active:hover {
+  transform: scale(1.1);
+  background: rgb(137, 231, 173);
+  box-shadow: 0px 0px 10px 0px rgba (0, 0, 0, 0.5);
+}
