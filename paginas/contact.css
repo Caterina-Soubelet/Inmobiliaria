@@ -21,17 +21,26 @@ section .contact-form {
   width: 90%;
   background: #9cdafa;
   box-shadow: 1px 9px 20px -5px rgba(0, 0, 0, 0.59);
+  
+}
+
+.datos-contact a {
+ 
+  color:rgb(9, 36, 58)
+}
+.datos-contact a:hover {
+  color:red;
 }
 
 .form {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   flex-direction: center;
   width: 85%;
   margin-left: 30px;
+
   
 }
 
@@ -43,9 +52,9 @@ section .contact-form {
   font-family: font-family: "Poppins", sans-serif;
   font-size:32px;
   margin-bottom:10px;
-  align-items:center;
-  justify-content:center;
-    
+  text-align:right;
+  letter-spacing:3px;
+
 }
 
 .form .text p {
